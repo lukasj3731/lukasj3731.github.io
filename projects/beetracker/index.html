@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee Tracker</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="chartist_style.css">
+    <script src="chartist.min.js"></script>
+    <script src="chartist.js"></script>
+</head>
+<body class="bg-white">
+    <header class="bg-black">
+        <a href="/index.html"><h1 href="">lukasj3731</h1></a>
+        <h1>info</h1>
+    </header>
+    <section>
+        <div class="padding-container">
+            <div class="bg-gray">
+                <div class="columns">
+                    <div class="card sidebar-big">
+                        <div class="padded-half">
+                            <img class="padded-half" src="title_image.png" alt="profile picture">
+                            <h3>Contributors</h3>
+                            <div class="person">
+                                <img class="profile-pic padded-half" src="/profile_pic.png" alt="profile picture">
+                                <span><a href="https://github.com/lukasj3731">lukasj3731</a></span>
+                            </div>
+                            <div class="person">
+                                <img class="profile-pic padded-half" src="https://avatars.githubusercontent.com/u/79269045?s=100" alt="profile picture">
+                                <span><a href="https://github.com/dpfistner">dpfistner</a></span>
+                            </div>
+                            <div class="person">
+                                <img class="profile-pic padded-half" src="https://avatars.githubusercontent.com/u/78153637?s=100" alt="profile picture">
+                                <span><a href="https://github.com/benediktheyer">benediktheyer</a></span>
+                            </div>
+                            <h3>Release</h3>
+                            <p class="padded-half continued">Apr. 2021</p>
+                            <h3>Links</h3>
+                            <p><a class="padded-half clr-black" href="https://bee-ai.innovationcenter.biz/">bee-ai.innovationcenter.biz</a></p>
+                        </div>
+                    </div>
+                    <div class="columns2">
+                        <div class="card">
+                            <div class="padded-half">
+                                <h1>About</h1>
+                                <h3>Description</h3>
+                                <p class="padded-half continued">Beetracker is a tool designed to measure activity of a camera-equipped hive. The camera streams a videofeed, which is analyzed frame by frame by a trained AI that is able to detect bees. Every bee is subsequently labeled and given a name associated with its tracking id. Bees that are detected to either enter or leave the hive are counted as activity, which is written hourly to a data file in addition to the current temperature. This data gives insight on the health of a hive, and also interesting correlations between temperature and activity.</p>
+                                <h3>Why</h3>
+                                <p class="padded-half continued">This project was a prototype for the "Innovation Management" department at T-Systems International. It was meant to augment the <a class="clr-black italic" href="https://beeandme.com">BeeAndme</a> program and show how AI could be used to get even more useful data from a smart hive.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="padded-half">
+                                <h1>Technology</h1>
+                                <h3>Artificial Intelligence</h3>
+                                <p class="padded-half continued">Tensorflow<br>MobileNet Convolutional Neural Networks</p>
+                                <h3>Webhosting</h3>
+                                <p class="padded-half continued">HTML/CSS/JS<br>Flask/Waitress<br>Video Streaming</p>
+                                <h3>Programming</h3>
+                                <p class="padded-half continued">Python</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="padding-container continued">
+            <div class="bg-gray">
+                <h1>Example</h1>
+                <div class="padding-container">
+                    <div class="grid-big">
+                        <div class="bg-white">
+                            <div class="padding-container">
+                                <div id="chart1" class="ct-chart block rounded-t rounded-b bg-gray-100 box-border p-2">
+                                    <p>Daily Activity</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white">
+                            <div class="padding-container">
+                                <div id="chart2" class="ct-chart block rounded-t rounded-b bg-gray-100 object-center box-border p-2">
+                                    <p>Monthly Activity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="padded-top">
+                        <div class="bg-white">
+                            <div class="padding-container">
+                                <div>
+                                    <p><span style="color:#FFA300">■</span> Temperature</p>
+                                    <p><span style="color:#FF004D">■</span> Bee Activity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="padded-top">
+                        <div class="bg-white">
+                            <div class="padding-container">
+                                <img src="tracked_bees_example_1.gif" alt="example gif"  width=20/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
