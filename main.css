@@ -237,5 +237,14 @@ img {
 }
 
 video {
-	width: 100%
+	width: 100%;
+	height: auto;
 }
+
+.video-container {
+	max-width: min(100%, 50rem);
+}
+
+.padded-bottom-65 {
+	padding-bottom: 0.65rem;
+ }
