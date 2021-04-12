@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Forecast</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="chartist_style.css">
+    <script src="chartist.min.js"></script>
+    <script src="chartist.js"></script>
+</head>
+<body class="bg-white">
+    <header class="bg-black">
+        <a href="/index.html"><h1 href="">lukasj3731</h1></a>
+        <h1>info</h1>
+    </header>
+    <section>
+        <div class="padding-container">
+            <div class="bg-gray">
+                <div class="columns">
+                    <div class="card sidebar-big">
+                        <div class="padded-half">
+                            <img class="padded-half" src="title_image.png" alt="profile picture">
+                            <h3>Contributors</h3>
+                            <div class="person">
+                                <img class="profile-pic padded-half" src="/profile_pic.png" alt="profile picture">
+                                <span><a href="https://github.com/lukasj3731">lukasj3731</a></span>
+                            </div>
+                            <div class="person">
+                                <img class="profile-pic padded-half" src="https://avatars.githubusercontent.com/u/28454919?s=100" alt="profile picture">
+                                <span><a href="https://github.com/AntonAmes">AntonAmes</a></span>
+                            </div>
+                            <div class="person">
+                                <img class="profile-pic padded-half" src="https://avatars.githubusercontent.com/u/36806204?s=100" alt="profile picture">
+                                <span><a href="https://github.com/jonasborn">jonasborn</a></span>
+                            </div>
+                            <h3>Release</h3>
+                            <p class="padded-half continued">Nov. 2020 (internal only)</p>
+                        </div>
+                    </div>
+                    <div class="columns2">
+                        <div class="card">
+                            <div class="padded-half">
+                                <h1>About</h1>
+                                <h3>Description</h3>
+                                <p class="padded-half continued">Covid Forecast is a tool designed to predict how the infection numbres will develop within the next few weeks. The predictions are based on machine learning using <a href="https://ludwig-ai.github.io/ludwig-docs/" class="italic clr-black">Ludwig ML</a> and are informed by current mobility data. The tool creates an optimistic, pessimistic and realistic guess in order to allow an assessment on lockdown measures or their effectiveness.</p>
+                                <h3>Why</h3>
+                                <p class="padded-half continued">This project was a prototype for the "Innovation Management" department at T-Systems International. It was created to see if AI could be helpful and accurate in assessing the development of infection numbers.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="padded-half">
+                                <h1>Technology</h1>
+                                <h3>Artificial Intelligence</h3>
+                                <p class="padded-half continued"><a href="https://ludwig-ai.github.io/ludwig-docs/" class="italic clr-black">Ludwig ML</a></p>
+                                <h3>Webhosting</h3>
+                                <p class="padded-half continued">HTML/CSS/JS<br>nginx</p>
+                                <h3>Programming</h3>
+                                <p class="padded-half continued">Java</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="padding-container continued">
+            <div class="bg-gray">
+                <h1>Example</h1>
+                <div class="padding-container">
+                    <div class="grid-big">
+                        <div class="bg-white">
+                            <div class="padding-container">
+                                <div class="ct-chart ct-golden-section" id="chart1"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bg-white padding-container">
+                                <div>
+                                    <p><span style="color:#29ADFF">■</span> Realistic Prediction</p>
+                                    <p><span style="color:#FF004D">■</span> Pessimistic Prediction</p>
+                                    <p><span style="color:#00E436">■</span> Optimistic Prediction</p>
+                                </div>
+                            </div>
+                            <div class="padded-top">
+                                <div class="bg-white padding-container padded-top">
+                                    <p>These values were extracted from an actual prediction of the AI. The AI is downloading fresh data in regular intervals, and uses the data to train a new model. With every new model, a new prediction is started, resulting in a newer and better projection of infection cases. Every cycle of new predictions contain 3 possibilities. An optimistic, a pessimistic and a realistic prediction. The optimistic prediction assumes that the mobility takes a low value, similar to a hard lockdown. The pessimistic prediction takes a mobility value close to a regular day before covid. The realistic values are based on the current mobility according to <a class="clr-black italic" href="https://www.google.com/covid19/mobility/">Googles mobility reports</a>. Overall, the prediction returns data, that can be used to get a good approximation on where the case numbers are heading, and what effects a hard lockdown or removal thereof could have on it.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
