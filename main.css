@@ -32,7 +32,7 @@ header {
 	z-index: 9999;
 }
 
-header > h1, a > h1 {
+header > h2, a > h2 {
 	padding: 1rem;
 }
 
@@ -44,7 +44,7 @@ header > h1, a > h1 {
 	padding-top: 1rem;
 }
 
-h1 {
+h2 {
 	font-size: 2rem;
 	font-family: 'Roboto', sans-serif;
 	padding: 0.5rem;
@@ -148,7 +148,7 @@ a {
 	padding: 1rem;
 }
 
-div h1 {
+div h2 {
 	padding-bottom: 0;
 	font-weight: 500;
 }
@@ -200,7 +200,7 @@ img {
 	image-rendering: crisp-edges;
 }
 
-.bg-gray > h1 {
+.bg-gray > h2 {
 	padding: 1rem;
 	padding-bottom: 0;
 }
